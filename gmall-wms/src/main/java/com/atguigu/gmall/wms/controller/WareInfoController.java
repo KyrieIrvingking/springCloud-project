@@ -33,6 +33,7 @@ public class WareInfoController {
     @Autowired
     private WareInfoService wareInfoService;
 
+
     /**
      * 列表
      */
