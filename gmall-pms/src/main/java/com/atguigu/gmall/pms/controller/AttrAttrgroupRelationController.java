@@ -40,17 +40,17 @@ public class AttrAttrgroupRelationController {
         attrAttrgroupRelationService.deleteRelations(relationEntities);
         return Resp.ok("Success!");
     }
-    /**
-     * 列表
-     */
-    @ApiOperation("分页查询(排序)")
-    @GetMapping("/list")
-    @PreAuthorize("hasAuthority('pms:attrattrgrouprelation:list')")
-    public Resp<PageVo> list(QueryCondition queryCondition) {
-        PageVo page = attrAttrgroupRelationService.queryPage(queryCondition);
-
-        return Resp.ok(page);
-    }
+//    /**
+//     * 列表
+//     */
+//    @ApiOperation("分页查询(排序)")
+//    @GetMapping("/list")
+//    @PreAuthorize("hasAuthority('pms:attrattrgrouprelation:list')")
+//    public Resp<PageVo> list(QueryCondition queryCondition) {
+//        PageVo page = attrAttrgroupRelationService.queryPage(queryCondition);
+//
+//        return Resp.ok(page);
+//    }
 
 
     /**
